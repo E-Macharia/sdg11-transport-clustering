@@ -10,8 +10,7 @@ sdg11-transport-clustering/
 ├── data/                       # Dataset (public_transport.parquet)
 ├── notebooks/
 │   └── clustering_public_transport.ipynb  # Main analysis notebook
-├── app/
-│   └── app.py                  # Streamlit demo app
+├──  app.py                  # Streamlit demo app
 ├── src/
 │   └── preprocess.py           # Data preprocessing functions
 │   └── clustering.py           # Clustering algorithms
