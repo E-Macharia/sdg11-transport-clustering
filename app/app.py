@@ -12,8 +12,12 @@ st.sidebar.header("Upload Data")
 uploaded_file = st.sidebar.file_uploader("Upload public_transport.parquet", type="parquet")
 
 if uploaded_file is not None:
-    df = pd.read_parquet(uploaded_file)
-    df_grouped = preprocess_data(df)
+    try:
+        df = pd.read_parquet(uploaded_file)
+        df_grouped = preprocess_data(df)
+    except Exception as e:
+        st.error(f"Error loading file: {str(e)}. Please ensure it's a valid parquet file.")
+        st.stop()
 else:
     st.warning("Please upload a public_transport.parquet file to proceed.")
     st.stop()
