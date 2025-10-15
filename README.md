@@ -43,3 +43,11 @@ The dataset is `public_transport.parquet` (115MB), containing passenger counts a
 ## SDG 11 Impact
 
 Optimizing routes reduces congestion and emissions, promoting sustainable urban mobility.
+
+## 🚀 Demo
+
+### Streamlit Dashboard
+![Dashboard](screenshots/dashboard_home.png)
+
+### Clustering Results
+![Clusters](screenshots/clustering_visualization.png)
