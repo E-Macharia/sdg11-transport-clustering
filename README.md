@@ -5,7 +5,7 @@ This project uses unsupervised learning (clustering) to identify high-demand tra
 ## Project Structure
 
 ```
-WEEK_2_ASSIGNMENT/
+sdg11-transport-clustering/
 │
 ├── data/                       # Dataset (public_transport.parquet)
 ├── notebooks/
@@ -47,7 +47,9 @@ Optimizing routes reduces congestion and emissions, promoting sustainable urban 
 ## 🚀 Demo
 
 ### Streamlit Dashboard
+
 ![Dashboard](screenshots/dashboard_home.png)
 
 ### Clustering Results
+
 ![Clusters](screenshots/clustering_visualization.png)
