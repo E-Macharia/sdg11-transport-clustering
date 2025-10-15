@@ -13,11 +13,10 @@ uploaded_file = st.sidebar.file_uploader("Upload public_transport.parquet", type
 
 if uploaded_file is not None:
     df = pd.read_parquet(uploaded_file)
+    df_grouped = preprocess_data(df)
 else:
-    st.info("Using default dataset...")
-    df = load_data("../data/public_transport.parquet")
-
-df_grouped = preprocess_data(df)
+    st.warning("Please upload a public_transport.parquet file to proceed.")
+    st.stop()
 
 st.header("Data Overview")
 st.write("Aggregated data shape:", df_grouped.shape)
